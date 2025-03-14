@@ -2,7 +2,7 @@
 
 This is my personal OpenGL playground, where I try to get used to anything related to OpenGL. Maybe a little bit motivated by some game developers at twicht.
 
-I only develop for this playground with macos, so the toolchain is only optimized for macos.
+I only develop under macos for this playground, therefore the toolchain is only optimized for macos.
 
 ## Things I implemented so far:
 - CMake build system which loads me some basic libraries to create a OpenGL Window with a proper environment, texture loading library and a math library.
