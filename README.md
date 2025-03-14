@@ -12,3 +12,4 @@ I only develop under macos for this playground, therefore the toolchain is only 
 - Entity
 
 ## Current preview
+![alt text](https://github.com/uullrich/opengl-playground/blob/main/preview/Playground.png?raw=true)
