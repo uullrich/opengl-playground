@@ -1,0 +1,51 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 19,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "hidden": true,
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES"
+            }
+        },
+        {
+            "name": "Debug",
+            "inherits": "default",
+            "description": "Configure with Debug build type",
+            "binaryDir": "${sourceDir}/build/debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/build/debug/bin"
+            }
+        },
+        {
+            "name": "Release",
+            "inherits": "default",
+            "description": "Configure with Release build type",
+            "binaryDir": "${sourceDir}/build/release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/build/release/bin"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Debug",
+            "configurePreset": "Debug",
+            "description": "Build the Debug configuration"
+        },
+        {
+            "name": "Release",
+            "configurePreset": "Release",
+            "description": "Build the Release configuration"
+        }
+    ],
+    "testPresets": []
+}
